@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merveille D'Or Geneva — Or physique et métaux précieux</title>
+  <meta name="description" content="Merveille D'Or Geneva SA — Comptoir suisse agréé d'or physique et de métaux précieux. Sourcé honnêtement, traité avec transparence, conservé en sécurité.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=TeX+Gyre+Pagella&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-line loader-line-h"></div>
+    <div class="loader-line loader-line-v"></div>
+    <div class="loader-logo">
+      <img src="assets/logo_gold.png" alt="MDR" class="loader-logo-img">
+    </div>
+    <div class="loader-percent">0</div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-wrapper">
+    <div class="cursor-dot"></div>
+    <div class="cursor-text">Explorer</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo_gold.png" alt="MDR" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="#philosophie" class="nav-link" data-i18n="nav.philosophy">Philosophie</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-lang">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn" data-lang="it">IT</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-canvas-container">
+      <canvas id="coin-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-label" data-i18n="hero.established">Genève · Établie 2026</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">MERVEILLE</span>
+        <span class="hero-title-line">D'OR</span>
+      </h1>
+      <div class="hero-logo">
+        <img src="assets/logo_full.png" alt="Merveille D'Or Geneva" class="hero-logo-img">
+      </div>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Le comptoir que Genève fait confiance pour rendre l'or lisible — sourcé honnêtement, traité avec transparence, conservé en sécurité.</p>
+      <div class="hero-actions">
+        <a href="#services" class="hero-action hero-action-primary" data-i18n="cta.buy">Acheter</a>
+        <a href="#services" class="hero-action hero-action-secondary" data-i18n="cta.sell">Vendre</a>
+        <a href="#contact" class="hero-action hero-action-tertiary" data-i18n="cta.contact">Nous contacter</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="hero-scroll-text" data-i18n="hero.scroll">Défiler</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section id="philosophie" class="philosophie">
+    <div class="philosophie-inner">
+      <div class="philosophie-text">
+        <span class="section-eyebrow" data-i18n="philosophy.eyebrow">Notre vision</span>
+        <h2 class="section-title" data-i18n="philosophy.title">Une merveille d'or, tenue à un standard genevois.</h2>
+        <p class="section-body" data-i18n="philosophy.body1">Merveille D'Or Geneva SA existe au point de rencontre de deux mondes : la discipline d'un comptoir suisse agréé de métaux précieux, et l'émerveillement que son propre nom implique — une merveille d'or.</p>
+        <p class="section-body" data-i18n="philosophy.body2">L'identité est construite pour tenir ces deux vérités à la fois. Elle emprunte l'autorité discrète des banques privées genevoises — marine profond, typographie disciplinée, espace généreux — et fait passer à travers cela un seul matériau chaud : une ligne dorée à facettes qui ne crie jamais.</p>
+        <div class="philosophie-attributes">
+          <div class="attribute">
+            <span class="attribute-num">01</span>
+            <span class="attribute-label" data-i18n="philosophy.attr1">Agréé</span>
+            <span class="attribute-desc" data-i18n="philosophy.attr1desc">Réglementé, audité et précis — jamais de raccourci en marché gris.</span>
+          </div>
+          <div class="attribute">
+            <span class="attribute-num">02</span>
+            <span class="attribute-label" data-i18n="philosophy.attr2">Lumineux</span>
+            <span class="attribute-desc" data-i18n="philosophy.attr2desc">Un seul matériau chaud sur un marine discipliné — retenue, pas décoration.</span>
+          </div>
+          <div class="attribute">
+            <span class="attribute-num">03</span>
+            <span class="attribute-label" data-i18n="philosophy.attr3">Genevois</span>
+            <span class="attribute-desc" data-i18n="philosophy.attr3desc">Sous-stimé, exact, bâti sur une réputation plus longue que tout cycle.</span>
+          </div>
+        </div>
+      </div>
+      <div class="philosophie-visual">
+        <div class="philosophie-emblem">
+          <img src="assets/logo_dark.png" alt="MDR Emblem" class="philosophie-emblem-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="services-inner">
+      <span class="section-eyebrow" data-i18n="services.eyebrow">Nos services</span>
+      <h2 class="section-title services-title" data-i18n="services.title">Or physique, traité avec la précision suisse.</h2>
+      
+      <div class="service-cards">
+        <div class="service-card" data-service="buy">
+          <div class="service-card-num">01</div>
+          <h3 class="service-card-title" data-i18n="services.buy.title">Acheter</h3>
+          <p class="service-card-body" data-i18n="services.buy.body">Lingots et pièces d'or physiques de qualité bullion, sourcés selon les standards OECD. Traçabilité complète par hachage SHA-256, de la mine au comptoir.</p>
+          <a href="#contact" class="service-card-link" data-i18n="services.buy.cta">En savoir plus</a>
+        </div>
+        <div class="service-card" data-service="sell">
+          <div class="service-card-num">02</div>
+          <h3 class="service-card-title" data-i18n="services.sell.title">Vendre</h3>
+          <p class="service-card-body" data-i18n="services.sell.body">Vente de métaux précieux avec évaluation transparente et tarifs indexés sur le marché spot. Processus de due diligence conforme aux normes AGS et LBMA.</p>
+          <a href="#contact" class="service-card-link" data-i18n="services.sell.cta">En savoir plus</a>
+        </div>
+        <div class="service-card" data-service="advisory">
+          <div class="service-card-num">03</div>
+          <h3 class="service-card-title" data-i18n="services.advisory.title">Conseil</h3>
+          <p class="service-card-body" data-i18n="services.advisory.body">Accompagnement personnalisé pour la constitution et la gestion de réserves en métaux précieux. Stratégies d'allocation adaptées à votre profil de risque.</p>
+          <a href="#contact" class="service-card-link" data-i18n="services.advisory.cta">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote">
+    <div class="quote-inner">
+      <blockquote class="quote-text" data-i18n="quote.text">Le comptoir que Genève fait confiance pour rendre l'or lisible.</blockquote>
+      <cite class="quote-cite" data-i18n="quote.cite">— Merveille D'Or Geneva SA</cite>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <span class="section-eyebrow" data-i18n="contact.eyebrow">Contact</span>
+        <h2 class="section-title" data-i18n="contact.title">Prenons rendez-vous.</h2>
+        <p class="section-body" data-i18n="contact.body">Notre équipe est à votre disposition pour discuter de vos besoins en or physique et métaux précieux. La discrétion et la confiance sont au cœur de notre relation client.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="contact-detail-label" data-i18n="contact.address.label">Adresse</span>
+            <span class="contact-detail-value" data-i18n="contact.address.value">Genève, Suisse</span>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-label" data-i18n="contact.email.label">Email</span>
+            <a href="mailto:contact@merveilledor.ch" class="contact-detail-value">contact@merveilledor.ch</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-label" data-i18n="contact.phone.label">Téléphone</span>
+            <a href="tel:+41220000000" class="contact-detail-value">+41 22 000 00 00</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" data-i18n="form.firstname">Prénom</label>
+            <input type="text" class="form-input" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label" data-i18n="form.lastname">Nom</label>
+            <input type="text" class="form-input" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" data-i18n="form.email">Email</label>
+          <input type="email" class="form-input" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label" data-i18n="form.subject">Sujet</label>
+          <select class="form-input form-select">
+            <option value="buy" data-i18n="form.subject.buy">Achat d'or</option>
+            <option value="sell" data-i18n="form.subject.sell">Vente d'or</option>
+            <option value="advisory" data-i18n="form.subject.advisory">Conseil</option>
+            <option value="other" data-i18n="form.subject.other">Autre</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="form-label" data-i18n="form.message">Message</label>
+          <textarea class="form-input form-textarea" rows="5"></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-i18n="form.submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-marquee">
+      <div class="marquee-track">
+        <span class="marquee-text">MERVEILLE D'OR GENEVA · OR PHYSIQUE · MÉTAUX PRÉCIEUX · SOURCÉ HONNÊTEMENT · TRAITÉ AVEC TRANSPARENCE · CONSERVÉ EN SÉCURITÉ · </span>
+        <span class="marquee-text">MERVEILLE D'OR GENEVA · OR PHYSIQUE · MÉTAUX PRÉCIEUX · SOURCÉ HONNÊTEMENT · TRAITÉ AVEC TRANSPARENCE · CONSERVÉ EN SÉCURITÉ · </span>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo_gold.png" alt="MDR" class="footer-logo">
+        <span class="footer-name">Merveille D'Or Geneva SA</span>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link" data-i18n="footer.privacy">Confidentialité</a>
+        <a href="#" class="footer-link" data-i18n="footer.terms">Conditions</a>
+        <a href="#" class="footer-link" data-i18n="footer.legal">Mentions légales</a>
+      </div>
+      <div class="footer-copy">
+        <span>© 2026 Merveille D'Or Geneva SA</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>
